@@ -1,0 +1,17 @@
+buildscript {
+	repositories {
+		flatDir {
+			dirs '../../build/libs'
+		}
+		jcenter()
+		
+	}
+	dependencies {
+		classpath 'com.blogspot.jvalentino.gradle:dep-plugin:1.0.0'
+        classpath 'org.apache.commons:commons-rng-simple:1.0'
+        classpath 'org.apache.commons:commons-rng-core:1.0'
+	}
+}
+
+apply plugin: 'dep-plugin'
+

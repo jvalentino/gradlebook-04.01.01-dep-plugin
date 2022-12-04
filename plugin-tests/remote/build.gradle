@@ -1,0 +1,15 @@
+buildscript {
+	repositories {
+		maven {
+			url 'http://localhost:8081/artifactory/gradle-release'
+		}
+		jcenter()
+		
+	}
+	dependencies {
+        classpath 'com.blogspot.jvalentino.gradle:dep-plugin:1.0.0'
+	}
+}
+
+apply plugin: 'dep-plugin'
+
